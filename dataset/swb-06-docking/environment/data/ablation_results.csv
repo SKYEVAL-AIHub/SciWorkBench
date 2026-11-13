@@ -1,0 +1,7 @@
+Variant,Description,Vina_Score_Avg,Vina_Score_Med,Vina_Min_Avg,Vina_Min_Med,Vina_Dock_Avg,Vina_Dock_Med,High_Affinity_Avg,High_Affinity_Med,QED_Avg,QED_Med,SA_Avg,SA_Med
+Full_Model,All components present,-7.23,-7.70,-8.03,-8.00,-8.72,-8.75,0.687,0.763,0.63,0.64,0.60,0.60
+w/o_S,Component S removed,-5.81,-6.50,-6.96,-7.05,-8.00,-8.11,0.596,0.627,0.67,0.69,0.66,0.66
+w/o_PQ,Components P and Q both removed,-5.85,-6.43,-6.80,-6.87,-7.72,-7.83,0.570,0.589,0.50,0.51,0.59,0.58
+w/o_P,Component P removed only,-6.55,-7.51,-7.99,-8.06,-8.79,-8.85,0.701,0.774,0.56,0.57,0.55,0.55
+w/o_Q,Component Q removed only,-6.63,-7.15,-7.62,-7.58,-8.47,-8.46,0.658,0.714,0.54,0.55,0.56,0.56
+w/o_V,Component V removed,-6.16,-6.61,-7.29,-7.33,-8.26,-8.39,0.636,0.714,0.65,0.67,0.62,0.61

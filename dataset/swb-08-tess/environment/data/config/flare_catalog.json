@@ -1,0 +1,197 @@
+{
+  "detector": "181-sample running median; >5 robust sigma; >3 sigma prominence",
+  "events": [
+    {
+      "flare_id": "F001",
+      "peak_btjd": 2036.7054557630395,
+      "peak_relative_excess": 0.007259828513239697,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F002",
+      "peak_btjd": 2036.9790751287865,
+      "peak_relative_excess": 0.0036778494748188617,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F003",
+      "peak_btjd": 2037.4439037758416,
+      "peak_relative_excess": 0.008126988325328766,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F004",
+      "peak_btjd": 2037.6753920630408,
+      "peak_relative_excess": 0.038708350285118875,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F005",
+      "peak_btjd": 2038.6705596001295,
+      "peak_relative_excess": 0.005377358065924431,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F006",
+      "peak_btjd": 2039.1837684288007,
+      "peak_relative_excess": 0.012315282186641241,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F007",
+      "peak_btjd": 2039.3495137576422,
+      "peak_relative_excess": 0.012831841957640977,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F008",
+      "peak_btjd": 2039.821285920224,
+      "peak_relative_excess": 0.003537092296955091,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F009",
+      "peak_btjd": 2042.2292185257957,
+      "peak_relative_excess": 0.003473518241537077,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F010",
+      "peak_btjd": 2042.4852433074652,
+      "peak_relative_excess": 0.02364936726334599,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F011",
+      "peak_btjd": 2044.5797366158763,
+      "peak_relative_excess": 0.003303804446743497,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F012",
+      "peak_btjd": 2045.848514479303,
+      "peak_relative_excess": 0.003467211110808277,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F013",
+      "peak_btjd": 2046.354543891483,
+      "peak_relative_excess": 0.003737464430365156,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F014",
+      "peak_btjd": 2047.215673576643,
+      "peak_relative_excess": 0.011219748738937163,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F015",
+      "peak_btjd": 2047.3485468565696,
+      "peak_relative_excess": 0.009444350278287938,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F016",
+      "peak_btjd": 2047.5045688230512,
+      "peak_relative_excess": 0.004160149591285522,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F017",
+      "peak_btjd": 2047.6291086416818,
+      "peak_relative_excess": 0.006510413308473906,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F018",
+      "peak_btjd": 2047.8330484528772,
+      "peak_relative_excess": 0.0046186002164712026,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F019",
+      "peak_btjd": 2049.73770811957,
+      "peak_relative_excess": 0.006547619243951308,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F020",
+      "peak_btjd": 2050.861098291932,
+      "peak_relative_excess": 0.004309353371244384,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F021",
+      "peak_btjd": 2051.44466801046,
+      "peak_relative_excess": 0.004302882081763881,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F022",
+      "peak_btjd": 2053.429404068227,
+      "peak_relative_excess": 0.030438335324278087,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F023",
+      "peak_btjd": 2054.2932976005736,
+      "peak_relative_excess": 0.0036706241138226847,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F024",
+      "peak_btjd": 2055.9037207343526,
+      "peak_relative_excess": 0.004183922458810718,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F025",
+      "peak_btjd": 2056.270157007487,
+      "peak_relative_excess": 0.012441041151265875,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F026",
+      "peak_btjd": 2056.68844512268,
+      "peak_relative_excess": 0.0032952059988091698,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F027",
+      "peak_btjd": 2056.91761230784,
+      "peak_relative_excess": 0.01684255476778662,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F028",
+      "peak_btjd": 2057.8000212731336,
+      "peak_relative_excess": 0.026289049565055844,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F029",
+      "peak_btjd": 2058.241688485237,
+      "peak_relative_excess": 0.005348825538562307,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F030",
+      "peak_btjd": 2058.7092815187166,
+      "peak_relative_excess": 0.0034903828847638874,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F031",
+      "peak_btjd": 2058.838679769146,
+      "peak_relative_excess": 0.012710180116757508,
+      "local_scatter": 0.000625282967563423
+    },
+    {
+      "flare_id": "F032",
+      "peak_btjd": 2059.5477080210526,
+      "peak_relative_excess": 0.013414259258200278,
+      "local_scatter": 0.000625282967563423
+    }
+  ]
+}

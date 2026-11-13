@@ -1,0 +1,9 @@
+Property,Preset_Target,Description
+QED,1.00,Quantitative Estimate of Drug-likeness (range 0-1)
+SA,1.00,Synthetic Accessibility score (range 1-10, lower is easier; target 1.0 means easiest)
+LogP,1.00,Octanol-water partition coefficient
+TPSA,50.00,Topological Polar Surface Area (Å²)
+HBA,3.00,Number of Hydrogen Bond Acceptors
+HBD,2.00,Number of Hydrogen Bond Donors
+Fsp3,0.50,Fraction of sp3-hybridized carbons
+ROTB,2.00,Number of Rotatable Bonds

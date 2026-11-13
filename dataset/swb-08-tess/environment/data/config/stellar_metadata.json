@@ -1,0 +1,8 @@
+{
+  "object": "AU Mic",
+  "tic_id": 441420236,
+  "ra_icrs_deg": 311.289718192023,
+  "dec_icrs_deg": -31.3409004606736,
+  "tmag": 6.755,
+  "tess_pixel_scale_arcsec": 21.0
+}

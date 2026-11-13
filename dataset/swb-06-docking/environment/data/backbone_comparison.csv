@@ -1,0 +1,5 @@
+Variant,Description,Vina_Score_Avg,Vina_Score_Med,Vina_Min_Avg,Vina_Min_Med,Vina_Dock_Avg,Vina_Dock_Med
+Alt_Full,Alternative backbone with all strategies,-7.03,-7.89,-8.00,-8.09,-8.81,-8.70
+Alt_w/o_PQ,Alternative backbone without P and Q,-6.58,-6.96,-7.34,-7.20,-8.01,-8.02
+Alt_w/o_S,Alternative backbone without S,-6.05,-6.99,-7.32,-7.44,-8.27,-8.40
+Alt_w/o_SPQ,Alternative backbone without S P and Q,-6.03,-6.44,-6.89,-6.80,-7.68,-7.77

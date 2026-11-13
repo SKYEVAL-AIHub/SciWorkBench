@@ -1,0 +1,5 @@
+{
+  "time_column": "time_btjd",
+  "scale": "TDB",
+  "zero_point_bjd": 2457000.0
+}

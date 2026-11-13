@@ -1,0 +1,154 @@
+{
+  "compounds": {
+    "compound_A": {
+      "source_label": "12a",
+      "data_file": "data/compound_A.csv",
+      "extra_data_files": [],
+      "hrms_found_mz": 264.1362,
+      "hrms_ion_type": "[M]+",
+      "grades_stereo": false,
+      "reference_smiles": "O[C@@H]1[C@@](C)(C/C=C/C(OC)=O)C[C@@](O2)(CC#C)[C@@]2([H])C1",
+      "canonical_smiles": "C#CC[C@]12C[C@](C)(C/C=C/C(=O)OC)[C@@H](O)C[C@H]1O2",
+      "constitution_standard_inchi": "InChI=1S/C15H20O4/c1-4-7-15-10-14(2,8-5-6-13(17)18-3)11(16)9-12(15)19-15/h1,5-6,11-12,16H,7-10H2,2-3H3",
+      "stereo_standard_inchi": "InChI=1S/C15H20O4/c1-4-7-15-10-14(2,8-5-6-13(17)18-3)11(16)9-12(15)19-15/h1,5-6,11-12,16H,7-10H2,2-3H3/b6-5+/t11-,12+,14-,15-/m0/s1",
+      "enantiomer_standard_inchi": "InChI=1S/C15H20O4/c1-4-7-15-10-14(2,8-5-6-13(17)18-3)11(16)9-12(15)19-15/h1,5-6,11-12,16H,7-10H2,2-3H3/b6-5+/t11-,12+,14-,15-/m1/s1",
+      "molecular_formula": "C15H20O4",
+      "monoisotopic_mass_Da": 264.1362,
+      "average_molar_mass_g_per_mol": 264.32,
+      "heavy_atom_count": 19,
+      "ring_count": 2,
+      "functional_group_counts": {
+        "ester_COO": 1,
+        "alkene_C=C": 1,
+        "alkyne_C#C": 1,
+        "epoxide": 1,
+        "hydroxyl_OH": 1
+      },
+      "n_stereocenters_specified": 4,
+      "n_double_bond_stereo_specified": 1,
+      "n_stereo_elements": 5
+    },
+    "compound_B": {
+      "source_label": "12b",
+      "data_file": "data/compound_B.csv",
+      "extra_data_files": [],
+      "hrms_found_mz": 278.1511,
+      "hrms_ion_type": "[M]+",
+      "grades_stereo": false,
+      "reference_smiles": "O[C@@H]1[C@@](C)(CC/C=C/C(OC)=O)C[C@@](O2)(CC#C)[C@@]2([H])C1",
+      "canonical_smiles": "C#CC[C@]12C[C@](C)(CC/C=C/C(=O)OC)[C@@H](O)C[C@H]1O2",
+      "constitution_standard_inchi": "InChI=1S/C16H22O4/c1-4-8-16-11-15(2,12(17)10-13(16)20-16)9-6-5-7-14(18)19-3/h1,5,7,12-13,17H,6,8-11H2,2-3H3",
+      "stereo_standard_inchi": "InChI=1S/C16H22O4/c1-4-8-16-11-15(2,12(17)10-13(16)20-16)9-6-5-7-14(18)19-3/h1,5,7,12-13,17H,6,8-11H2,2-3H3/b7-5+/t12-,13+,15-,16-/m0/s1",
+      "enantiomer_standard_inchi": "InChI=1S/C16H22O4/c1-4-8-16-11-15(2,12(17)10-13(16)20-16)9-6-5-7-14(18)19-3/h1,5,7,12-13,17H,6,8-11H2,2-3H3/b7-5+/t12-,13+,15-,16-/m1/s1",
+      "molecular_formula": "C16H22O4",
+      "monoisotopic_mass_Da": 278.1518,
+      "average_molar_mass_g_per_mol": 278.35,
+      "heavy_atom_count": 20,
+      "ring_count": 2,
+      "functional_group_counts": {
+        "ester_COO": 1,
+        "alkene_C=C": 1,
+        "alkyne_C#C": 1,
+        "epoxide": 1,
+        "hydroxyl_OH": 1
+      },
+      "n_stereocenters_specified": 4,
+      "n_double_bond_stereo_specified": 1,
+      "n_stereo_elements": 5
+    },
+    "compound_C": {
+      "source_label": "13",
+      "data_file": "data/compound_C.csv",
+      "extra_data_files": [
+        "data/compound_C_noesy.png"
+      ],
+      "hrms_found_mz": 267.1597,
+      "hrms_ion_type": "[M+H]+",
+      "grades_stereo": true,
+      "reference_smiles": "O[C@@H]1[C@@](C)(C[C@]2([H])[C@@H](C(OC)=O)C(C3)=C)C[C@]23[C@H](O)C1",
+      "canonical_smiles": "C=C1C[C@]23C[C@](C)(C[C@@H]2[C@H]1C(=O)OC)[C@@H](O)C[C@H]3O",
+      "constitution_standard_inchi": "InChI=1S/C15H22O4/c1-8-5-15-7-14(2,10(16)4-11(15)17)6-9(15)12(8)13(18)19-3/h9-12,16-17H,1,4-7H2,2-3H3",
+      "stereo_standard_inchi": "InChI=1S/C15H22O4/c1-8-5-15-7-14(2,10(16)4-11(15)17)6-9(15)12(8)13(18)19-3/h9-12,16-17H,1,4-7H2,2-3H3/t9-,10+,11-,12+,14+,15+/m1/s1",
+      "enantiomer_standard_inchi": "InChI=1S/C15H22O4/c1-8-5-15-7-14(2,10(16)4-11(15)17)6-9(15)12(8)13(18)19-3/h9-12,16-17H,1,4-7H2,2-3H3/t9-,10+,11-,12+,14+,15+/m0/s1",
+      "molecular_formula": "C15H22O4",
+      "monoisotopic_mass_Da": 266.1518,
+      "average_molar_mass_g_per_mol": 266.34,
+      "heavy_atom_count": 19,
+      "ring_count": 3,
+      "functional_group_counts": {
+        "ester_COO": 1,
+        "alkene_C=C": 0,
+        "alkyne_C#C": 0,
+        "epoxide": 0,
+        "hydroxyl_OH": 2
+      },
+      "n_stereocenters_specified": 6,
+      "n_double_bond_stereo_specified": 0,
+      "n_stereo_elements": 6
+    }
+  },
+  "compound_order": [
+    "compound_A",
+    "compound_B",
+    "compound_C"
+  ],
+  "fg_types": [
+    "ester_COO",
+    "alkene_C=C",
+    "alkyne_C#C",
+    "epoxide",
+    "hydroxyl_OH"
+  ],
+  "grading_notes": {
+    "output_file": "output/structures.csv",
+    "output_columns": [
+      "compound_id",
+      "smiles",
+      "inchikey"
+    ],
+    "grading_no_tool": {
+      "分子式正确": {
+        "per_compound": 5,
+        "source": "由提交 smiles 重算 CalcMolFormula 与参考比较"
+      },
+      "环数目正确": {
+        "per_compound": 5,
+        "source": "图论环数（键数-原子数+1），参考值 A=2, B=2, C=3"
+      },
+      "官能团种类和数目正确": {
+        "per_compound": 5,
+        "source": "ester_COO/alkene_C=C/alkyne_C#C/epoxide/hydroxyl_OH 五类计数全部相等"
+      },
+      "构造结构正确（不考虑立体异构）": {
+        "per_compound": 10,
+        "source": "去立体后的标准 InChI 逐字比对"
+      },
+      "立体结构正确": {
+        "compound_C": 25,
+        "source": "仅 compound_C；含立体标准 InChI 等于参考或其对映体（全部手性中心取反；E/Z 在镜像下不变）；非对映异构体、部分指定或未指定立体均判错"
+      }
+    },
+    "grading_tool": {
+      "分子式正确": {
+        "per_compound": 5
+      },
+      "环数目正确": {
+        "per_compound": 5
+      },
+      "官能团种类和数目正确": {
+        "per_compound": 5
+      },
+      "构造结构正确（不考虑立体异构）": {
+        "per_compound": 10
+      },
+      "立体结构正确": {
+        "compound_C": 19
+      },
+      "InChIKey与自身结构一致": {
+        "per_compound": 2
+      }
+    },
+    "stereo_policy": "本题只有 compound_C 考察立体异构：立体结构正确当且仅当提交结构与参考结构为同一立体异构体或互为对映异构体（外消旋合成无法区分对映体）；任何非对映异构体判错。compound_C 的相对构型由随题给出的 NOESY 谱确定。compound_A/B 的谱图不含足够构型信息，只考构造，提交中写或不写立体均不影响判分。",
+    "hrms_policy": "三个化合物均给出 HRMS 实测 m/z 与离子类型（A/B 为 FI/FD 的 [M]+，C 为 FI 的 [M+H]+），但刻意不给出文献中 calcd 的元素组成，分子式需由精确质量结合 NMR 计数推出。"
+  }
+}

@@ -1,0 +1,15 @@
+Success Rate (SR) Criteria
+
+The SR is defined as the proportion of molecules that satisfy the following nine physicochemical property constraints:
+
+C1: Vina dock < -8.18 kcal/mol
+C2: QED > 0.25
+C3: SA > 0.59
+C4: -0.4 <= LogP <= 5.6
+C5: TPSA <= 140 square angstroms
+C6: Fsp3 >= 0.42
+C7: HBA <= 10
+C8: HBD <= 5
+C9: ROTB <= 10
+
+A molecule is considered to have passed the SR filter if and only if it satisfies all nine conditions simultaneously. For cases where a condition cannot be evaluated due to missing data, the molecule's SR status should be reported as indeterminate for that condition.

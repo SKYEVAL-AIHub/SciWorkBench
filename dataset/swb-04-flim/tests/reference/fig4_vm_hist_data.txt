@@ -1,0 +1,8 @@
+FOV1
+Vm_-100~-80:24120 Vm_-80~-60:18650 low_conf_pixel:3120
+FOV2
+Vm_-100~-80:22980 Vm_-80~-60:19120 low_conf_pixel:2960
+FOV3
+Vm_-100~-80:23560 Vm_-80~-60:18940 low_conf_pixel:3010
+FOV4
+Vm_-100~-80:24410 Vm_-80~-60:18530 low_conf_pixel:2870

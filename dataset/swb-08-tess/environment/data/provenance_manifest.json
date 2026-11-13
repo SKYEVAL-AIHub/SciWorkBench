@@ -1,0 +1,78 @@
+{
+  "archive": "MAST",
+  "collection": "TESS",
+  "target": "AU Mic / TIC 441420236",
+  "retrieved_utc": "2026-08-19",
+  "raw_products": [
+    {
+      "filename": "tess2018206045859-s0001-0000000441420236-0120-s_lc.fits",
+      "uri": "mast:TESS/product/tess2018206045859-s0001-0000000441420236-0120-s_lc.fits",
+      "sector": 1,
+      "cadence_seconds": 120,
+      "kind": "lightcurve",
+      "obsid": 60835816,
+      "download_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000441420236-0120-s_lc.fits",
+      "size_bytes": 2039040,
+      "sha256": "fe601f0f82b7d89c4d303e3c3acaa43efb61e38976b47482efce577e0029c9c3"
+    },
+    {
+      "filename": "tess2020186164531-s0027-0000000441420236-0189-s_lc.fits",
+      "uri": "mast:TESS/product/tess2020186164531-s0027-0000000441420236-0189-s_lc.fits",
+      "sector": 27,
+      "cadence_seconds": 120,
+      "kind": "lightcurve",
+      "obsid": 27810378,
+      "download_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2020186164531-s0027-0000000441420236-0189-s_lc.fits",
+      "size_bytes": 1785600,
+      "sha256": "7a0e1b206bf5927d30d60c15f1b11f7080f519028fbef9e7ffc2555fdb53318e"
+    },
+    {
+      "filename": "tess2020186164531-s0027-0000000441420236-0189-a_fast-lc.fits",
+      "uri": "mast:TESS/product/tess2020186164531-s0027-0000000441420236-0189-a_fast-lc.fits",
+      "sector": 27,
+      "cadence_seconds": 20,
+      "kind": "lightcurve",
+      "obsid": 27797709,
+      "download_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2020186164531-s0027-0000000441420236-0189-a_fast-lc.fits",
+      "size_bytes": 10558080,
+      "sha256": "e06411ce5bd15db019a55f5a56b3232627f4f1c8fec17462405dbce1ddf443f1"
+    },
+    {
+      "filename": "tess2018206045859-s0001-0000000441420236-0120-s_tp.fits",
+      "uri": "mast:TESS/product/tess2018206045859-s0001-0000000441420236-0120-s_tp.fits",
+      "sector": 1,
+      "cadence_seconds": 120,
+      "kind": "target_pixel",
+      "obsid": 60835816,
+      "download_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000441420236-0120-s_tp.fits",
+      "size_bytes": 58017600,
+      "sha256": "736f095dd1af54a3fb4590208e9021649ed5e24ec86bbb211736fe1024aa2826"
+    },
+    {
+      "filename": "tess2020186164531-s0027-0000000441420236-0189-s_tp.fits",
+      "uri": "mast:TESS/product/tess2020186164531-s0027-0000000441420236-0189-s_tp.fits",
+      "sector": 27,
+      "cadence_seconds": 120,
+      "kind": "target_pixel",
+      "obsid": 27810378,
+      "download_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2020186164531-s0027-0000000441420236-0189-s_tp.fits",
+      "size_bytes": 50711040,
+      "sha256": "7ce5cbe9b5c971d83756df2fc7f3e2c653ca6748dc2a171e7b5673da4f523f33"
+    }
+  ],
+  "tic_query": {
+    "service": "Mast.Catalogs.Filtered.Tic.Position",
+    "center_icrs_deg": [
+      311.289718192023,
+      -31.3409004606736
+    ],
+    "radius_deg": 0.03,
+    "returned_rows": 32
+  },
+  "transformations": [
+    "FITS columns copied without changing TIME, flux, error, QUALITY, or centroid values",
+    "relative_flux is PDCSAP_FLUX divided by its finite sector median",
+    "event and flare files are row subsets of the official time series",
+    "pixel event files contain in-event and out-of-event means and their difference from official TPF pixels"
+  ]
+}

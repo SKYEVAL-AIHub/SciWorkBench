@@ -1,0 +1,11 @@
+Target,PDB_ID,Data_Source,Active_MW,Active_LogP,Active_TPSA,Active_QED,Active_SA,Active_Fsp3,Num_Generated_Mols,Has_Vina_Dock,Has_Vina_Score
+CDK2,1H00,Fig_5,415.4,3.54,82.5,0.49,0.79,0.24,3,Yes,No
+ROCK1,6E9W,Fig_5,346.4,3.45,60.5,0.79,0.88,0.14,3,Yes,No
+GFRP1,,Fig_S11,420.6,4.66,71.4,0.31,0.70,0.61,1,No,Yes
+EGFR,,Fig_S11,376.5,2.99,70.0,0.46,0.60,1.00,1,No,Yes
+LCK,,Fig_S12,431.6,4.49,57.6,0.50,0.60,0.24,1,No,Yes
+MAPK2,,Fig_S12,450.6,3.91,62.8,0.41,0.66,1.00,1,No,Yes
+AKT2,,Fig_S13,308.4,2.84,41.5,0.52,0.60,0.38,1,No,Yes
+BRD9,,Fig_S13,441.6,4.78,37.4,0.59,0.60,0.13,1,No,Yes
+PLK1,,Fig_S14,387.5,2.54,57.2,0.66,0.61,0.57,1,No,Yes
+BAL2,,Fig_S14,377.5,1.94,61.4,0.72,0.67,0.00,1,No,Yes

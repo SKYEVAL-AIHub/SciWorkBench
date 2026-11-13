@@ -1,0 +1,11 @@
+id,domain,title,availability,harbor_path
+SWB-01,biology,Soma-free 3D neurite tracing,runnable,dataset/swb-01-neurite
+SWB-02,biology,AGO2 perturbation and RNA kinetics,runnable,dataset/swb-02-ago2
+SWB-03,biology,In vivo calcium imaging,runnable,dataset/swb-03-calcium
+SWB-04,biology,Dual-gate FLIM cardiac electrophysiology,runnable_sparse,dataset/swb-04-flim
+SWB-05,chemistry,Organic structure elucidation with NMR NOESY and HRMS,runnable,dataset/swb-05-structure
+SWB-06,chemistry,Molecular generation claims and docking verification,runnable,dataset/swb-06-docking
+SWB-07,chemistry,Raman spectroscopy of Fe-doped monolayer MoS₂,runnable,dataset/swb-07-raman
+SWB-08,physics,Flare-aware transit validation with TESS,runnable,dataset/swb-08-tess
+SWB-09,physics,Quantum reaction rates with ring-polymer surface hopping,runnable,dataset/swb-09-tully
+SWB-10,physics,Interface-localized electronic modulation in GdTe₂,runnable,dataset/swb-10-gdte2

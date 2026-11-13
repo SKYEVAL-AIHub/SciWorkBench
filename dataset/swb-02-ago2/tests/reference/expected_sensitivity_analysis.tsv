@@ -1,0 +1,4 @@
+configuration	eligible_genes	median_whole_log2_effect	whole_effect_spearman_vs_main	whole_top200_overlap_vs_main	median_nascent_log2_effect	nascent_effect_spearman_vs_main	nascent_top200_overlap_vs_main	median_preexisting_log2_effect	preexisting_effect_spearman_vs_main	preexisting_top200_overlap_vs_main
+main_cpm	4240	0.0214710833918188	1.0	200	0.007935816827758124	1.0	200	0.023050401661342867	1.0	200
+strict_filter_cpm	1296	0.027325407773798993	1.0	200	0.004626956550937145	0.9999999999999999	200	0.03005869750045731	1.0	200
+main_filter_poscounts	4240	0.005389171944344184	0.9953964332511391	186	0.007849720437348218	0.9962711615088324	189	0.004635674070545104	0.9955013209677783	189

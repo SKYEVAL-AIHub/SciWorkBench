@@ -1,0 +1,140 @@
+{
+  "material": "GdTe2",
+  "measurement_temperature_K": 4.8,
+  "magnetic_field_T": 0.0,
+  "coordinate_convention": {
+    "x_nm": "increases with stored columns",
+    "y_nm": "increases with stored row index; this is the analysis coordinate, not a crystallographic axis",
+    "retrace": "losslessly reversed in x so columns share the forward coordinate",
+    "fft": "report spatial frequency in cycles/nm; multiply by 2*pi for rad/nm"
+  },
+  "topography": {
+    "file": "region1_topography.npz",
+    "quantity": "tip height",
+    "array_unit": "m",
+    "bias_mV": 100.0,
+    "setpoint_pA": 100.0,
+    "scan_size_nm": [
+      40.0,
+      40.0
+    ],
+    "pixels": [
+      512,
+      512
+    ]
+  },
+  "maps": [
+    {
+      "id": "E001",
+      "file": "map_E001.npz",
+      "quantity": "lock-in in-phase differential-conductance proxy",
+      "array_unit": "A",
+      "bias_mV": 100.0,
+      "setpoint_pA": 100.0,
+      "modulation_mV_peak": 10.0,
+      "lockin_frequency_Hz": 973.013,
+      "scan_size_nm": [
+        40.0,
+        40.0
+      ],
+      "pixels": [
+        512,
+        512
+      ],
+      "acquired": "20.03.2025 23:38:09"
+    },
+    {
+      "id": "E002",
+      "file": "map_E002.npz",
+      "quantity": "lock-in in-phase differential-conductance proxy",
+      "array_unit": "A",
+      "bias_mV": 300.0,
+      "setpoint_pA": 200.0,
+      "modulation_mV_peak": 10.0,
+      "lockin_frequency_Hz": 973.013,
+      "scan_size_nm": [
+        40.0,
+        40.0
+      ],
+      "pixels": [
+        512,
+        512
+      ],
+      "acquired": "21.03.2025 09:33:40"
+    },
+    {
+      "id": "E003",
+      "file": "map_E003.npz",
+      "quantity": "lock-in in-phase differential-conductance proxy",
+      "array_unit": "A",
+      "bias_mV": 400.0,
+      "setpoint_pA": 200.0,
+      "modulation_mV_peak": 10.0,
+      "lockin_frequency_Hz": 973.013,
+      "scan_size_nm": [
+        40.0,
+        40.0
+      ],
+      "pixels": [
+        512,
+        512
+      ],
+      "acquired": "21.03.2025 10:21:00"
+    },
+    {
+      "id": "E004",
+      "file": "map_E004.npz",
+      "quantity": "lock-in in-phase differential-conductance proxy",
+      "array_unit": "A",
+      "bias_mV": 900.0,
+      "setpoint_pA": 300.0,
+      "modulation_mV_peak": 20.0,
+      "lockin_frequency_Hz": 973.013,
+      "scan_size_nm": [
+        40.0,
+        40.0
+      ],
+      "pixels": [
+        512,
+        512
+      ],
+      "acquired": "21.03.2025 14:54:12"
+    }
+  ],
+  "spectra": {
+    "file": "spectra_set_A.csv",
+    "bias_unit": "mV",
+    "didv_unit": "A",
+    "current_unit": "A",
+    "points": [
+      {
+        "id": "P01",
+        "position_nm": [
+          -90.8741,
+          -97.5429
+        ],
+        "modulation_mV_peak": 4.0,
+        "points": 401
+      },
+      {
+        "id": "P02",
+        "position_nm": [
+          -54.892199999999995,
+          -111.629
+        ],
+        "modulation_mV_peak": 4.0,
+        "points": 401
+      },
+      {
+        "id": "P03",
+        "position_nm": [
+          -27.4848,
+          -134.29
+        ],
+        "modulation_mV_peak": 4.0,
+        "points": 401
+      }
+    ]
+  },
+  "provenance": "Experimental STM/STS data, losslessly exported from Nanonis SXM/DAT files."
+}

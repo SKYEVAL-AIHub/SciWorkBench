@@ -1,0 +1,36 @@
+{
+  "period_seed_days": 8.463,
+  "events": [
+    {
+      "event_id": "E000",
+      "epoch": 0,
+      "sector": 1,
+      "center_btjd": 1330.39
+    },
+    {
+      "event_id": "E002",
+      "epoch": 2,
+      "sector": 1,
+      "center_btjd": 1347.316
+    },
+    {
+      "event_id": "E084",
+      "epoch": 84,
+      "sector": 27,
+      "center_btjd": 2041.282
+    },
+    {
+      "event_id": "E085",
+      "epoch": 85,
+      "sector": 27,
+      "center_btjd": 2049.745
+    },
+    {
+      "event_id": "E086",
+      "epoch": 86,
+      "sector": 27,
+      "center_btjd": 2058.208
+    }
+  ],
+  "window_half_width_days": 0.25
+}

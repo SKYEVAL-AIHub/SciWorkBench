@@ -1,0 +1,15 @@
+field	value	source
+public_series	GSE218566	GSE218566_series_record.txt
+public_sample	GSM6752591	GSM6752591_record.txt
+organism	Homo sapiens	GSM6752591_record.txt
+experimental_system	HEK293-idCas9 cell line	GSM6752591_record.txt
+perturbation_system	pooled CRISPRi screen using dCas9-KRAB-MeCP2	GSM6752591_record.txt
+collection_time	screen day 7	GSM6752591_record.txt
+metabolic_labeling	4sU for 2 hours before collection	GSM6752591_record.txt
+reference_assembly	hg38 with two customized lentiviral sequences	GSM6752591_record.txt
+whole_layer	public whole-transcriptome gene-by-cell integer counts	GSM6752591_on_target_whole_tx_count_matrix.mtx.gz
+nascent_layer	public nascent-read gene-by-cell integer counts; nascent reads were extracted from the whole-transcriptome reads	GSM6752591_record.txt
+preexisting_layer	derived after guide aggregation as whole minus nascent; not supplied as a separate GEO matrix	layer_metadata.tsv
+profile_unit	one guide-level sum of deterministically selected on-target cells	guide_profile_metadata.tsv
+independent_donor_replicates	none; this is one pooled cell-line screen	GSE218566_series_record.txt;GSM6752591_record.txt
+guide_abundance_time_course	not included; no day 0/day 7 guide-count comparison is supplied in the compact input	GSE218566_filelist.txt

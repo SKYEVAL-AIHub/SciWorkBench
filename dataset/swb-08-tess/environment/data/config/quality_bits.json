@@ -1,0 +1,5 @@
+{
+  "default_reject_bits": 175,
+  "accepted_rule": "(QUALITY & reject_bits) == 0",
+  "quality_zero_always_accepted": true
+}

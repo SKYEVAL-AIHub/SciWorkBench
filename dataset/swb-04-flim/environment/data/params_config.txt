@@ -1,0 +1,7 @@
+T_readout=6.4e-6
+min_gate_width=1e-9
+min_phys_Vm=-100
+max_phys_Vm=-60
+saturation_threshold=200
+SNR_base=25
+# 无固定降噪、滤波参数，需Agent自适应选择

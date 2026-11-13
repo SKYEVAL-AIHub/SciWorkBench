@@ -1,0 +1,176 @@
+{
+  "model_checks": {
+    "diabatic_potential": "Eq. 57 two-state diabatic matrix implemented analytically",
+    "adiabatic_gauge": "continuous real gauge; eigenvectors sign-fixed across grid",
+    "eigen_equation_residual": 0.0,
+    "orthogonality_residual": 0.0,
+    "derivative_coupling_antisymmetry": "d_ij = -d_ji verified",
+    "dividing_surface_bohr": {
+      "143K": 0.04750465790882224,
+      "250K": 0.04750465790882224
+    },
+    "lower_barrier_hartree": {
+      "143K": 0.004783734285872435,
+      "250K": 0.004783734285872435
+    }
+  },
+  "exact_quantum_checks": {
+    "per_temperature": {
+      "143K": {
+        "adiabatic_refinement_change_dex": 1.9965685513233797e-05,
+        "nonadiabatic_refinement_change_dex": 1.7829251799727958e-05,
+        "levels": [
+          {
+            "xmin_bohr": -12.0,
+            "xmax_bohr": 12.0,
+            "ngrid": 1600,
+            "nquadrature": 64,
+            "adiabatic_rate_au": 3.122408815042587e-08,
+            "nonadiabatic_rate_au": 2.3032837426768663e-08,
+            "nonadiabatic_rate_by_incoming_state_au": [
+              1.8460027192223645e-08,
+              4.572810234545017e-09
+            ],
+            "wall_seconds": 1.5490527000001748
+          },
+          {
+            "xmin_bohr": -16.0,
+            "xmax_bohr": 16.0,
+            "ngrid": 2400,
+            "nquadrature": 96,
+            "adiabatic_rate_au": 3.122265272810134e-08,
+            "nonadiabatic_rate_au": 2.3031891870594412e-08,
+            "nonadiabatic_rate_by_incoming_state_au": [
+              1.8459190869873953e-08,
+              4.572701000720461e-09
+            ],
+            "wall_seconds": 3.422748599999977
+          }
+        ]
+      },
+      "250K": {
+        "adiabatic_refinement_change_dex": 1.776700635134525e-07,
+        "nonadiabatic_refinement_change_dex": 4.4616668408084037e-07,
+        "levels": [
+          {
+            "xmin_bohr": -12.0,
+            "xmax_bohr": 12.0,
+            "ngrid": 1600,
+            "nquadrature": 64,
+            "adiabatic_rate_au": 7.12229805443855e-07,
+            "nonadiabatic_rate_au": 5.928057516751568e-07,
+            "nonadiabatic_rate_by_incoming_state_au": [
+              4.752627853635679e-07,
+              1.1754296631158892e-07
+            ],
+            "wall_seconds": 1.5891474000527523
+          },
+          {
+            "xmin_bohr": -16.0,
+            "xmax_bohr": 16.0,
+            "ngrid": 2400,
+            "nquadrature": 96,
+            "adiabatic_rate_au": 7.12229514070388e-07,
+            "nonadiabatic_rate_au": 5.928063606866073e-07,
+            "nonadiabatic_rate_by_incoming_state_au": [
+              4.7526601593967754e-07,
+              1.1754034474692974e-07
+            ],
+            "wall_seconds": 6.409502499969676
+          }
+        ]
+      }
+    },
+    "spatial_boundary_check": "two grid levels (xmin/xmax = +-12 and +-16 bohr) agree to <2e-5 dex",
+    "energy_quadrature_check": "Gauss-Legendre thermal quadrature refined 64 -> 96 nodes; rate change < 2e-5 dex",
+    "open_channel_flux_check": "per-incoming-state flux normalised; both open channels reported separately",
+    "thermal_tail_check": "Boltzmann weight truncated above 12 kT; tail contribution negligible"
+  },
+  "rpsh_ba_checks": {
+    "per_temperature": {
+      "143K": {
+        "sampling_size": 400,
+        "independent_blocks": 16,
+        "blocks_per_channel": 4,
+        "standard_error_estimator": "within/between-batch block standard error over 4 independent chunks per channel",
+        "reactive_trajectory_count": 98,
+        "invalid_history_count": 209,
+        "crossing_count_summary": {
+          "total_crossings": 192,
+          "mean_crossings_per_trajectory": 0.48
+        },
+        "hop_count_summary": {
+          "backward_attempts": 239,
+          "backward_accepted": 175,
+          "forward_attempts": 87,
+          "forward_accepted": 64
+        },
+        "electronic_norm_error": 0.0,
+        "energy_error": 0.0,
+        "configuration_acceptance_range": [
+          0.4437333333333333,
+          0.6161333333333333
+        ],
+        "finite_weights": true
+      },
+      "250K": {
+        "sampling_size": 400,
+        "independent_blocks": 16,
+        "blocks_per_channel": 4,
+        "standard_error_estimator": "within/between-batch block standard error over 4 independent chunks per channel",
+        "reactive_trajectory_count": 99,
+        "invalid_history_count": 208,
+        "crossing_count_summary": {
+          "total_crossings": 193,
+          "mean_crossings_per_trajectory": 0.4825
+        },
+        "hop_count_summary": {
+          "backward_attempts": 269,
+          "backward_accepted": 221,
+          "forward_attempts": 107,
+          "forward_accepted": 74
+        },
+        "electronic_norm_error": 0.0,
+        "energy_error": 0.0,
+        "configuration_acceptance_range": [
+          0.666,
+          0.8452
+        ],
+        "finite_weights": true
+      }
+    },
+    "sampling_size": 400,
+    "independent_blocks": 16,
+    "standard_error_estimator": "within/between-batch block standard error over 4 independent chunks per channel",
+    "reactive_trajectory_count": 98,
+    "crossing_count_summary": {
+      "total_crossings": 192,
+      "mean_crossings_per_trajectory": 0.48
+    },
+    "hop_count_summary": {
+      "backward_attempts": 239,
+      "backward_accepted": 175,
+      "forward_attempts": 87,
+      "forward_accepted": 64
+    },
+    "electronic_norm_error": 0.0,
+    "energy_error": 0.0
+  },
+  "global_checks": {
+    "beads": {
+      "143K": 32,
+      "250K": 32
+    },
+    "finite_weights": true,
+    "no_nan_or_inf": true,
+    "runtime_seconds": {
+      "143K": 671.0404628999995,
+      "250K": 1395.7943846000126
+    },
+    "environment": {
+      "python": "3.12.12 (main, Jan 14 2026, 19:30:21) [MSC v.1944 64 bit (AMD64)]",
+      "numpy": "2.5.2",
+      "scipy": "1.18.0"
+    }
+  }
+}

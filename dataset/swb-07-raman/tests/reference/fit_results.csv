@@ -1,0 +1,58 @@
+data_type,component,helicity,field_T,temperature_K,metric,value,uncertainty,unit,note
+sample_comparison,original_hybridized_mode,helicity-switched,,12.0,center,264.92,0.25,cm^-1,Fe:MoS2
+sample_comparison,dopant_induced_mode,helicity-switched,,12.0,center,282.86,0.19,cm^-1,Fe:MoS2
+sample_comparison,undoped_hybridized_mode,helicity-switched,,12.0,center,267.0,,cm^-1,MoS2; approximate reference center
+field,original_hybridized_mode,RL,,12.0,mu_eff,2.14,0.07,mu_B,Reference Gaussian branch fit for the same public dataset
+field,original_hybridized_mode,RL,,12.0,slope,0.999089982492,0.032680513446,cm^-1/T,Equivalent single-branch Zeeman slope
+field,original_hybridized_mode,LR,,12.0,mu_eff,2.29,0.07,mu_B,Reference Gaussian branch fit for the same public dataset
+field,original_hybridized_mode,LR,,12.0,slope,-1.069119654162,0.032680513446,cm^-1/T,Equivalent single-branch Zeeman slope
+field,dopant_induced_mode,RL,,12.0,mu_eff,2.82,0.09,mu_B,Reference Gaussian branch fit for the same public dataset
+field,dopant_induced_mode,RL,,12.0,slope,1.316557827396,0.042017803002,cm^-1/T,Equivalent single-branch Zeeman slope
+field,dopant_induced_mode,LR,,12.0,mu_eff,2.76,0.06,mu_B,Reference Gaussian branch fit for the same public dataset
+field,dopant_induced_mode,LR,,12.0,slope,-1.288545958728,0.028011868668,cm^-1/T,Equivalent single-branch Zeeman slope
+temperature,QES,LL,,11.6,chi_QES_proxy,8739.08996162866,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,11.6,chi_QES_norm_200K,3.910774299695869,,relative,Normalized to 200 K
+temperature,QES,LL,,20.0,chi_QES_proxy,8261.023722747585,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,20.0,chi_QES_norm_200K,3.696837932319242,,relative,Normalized to 200 K
+temperature,QES,LL,,30.0,chi_QES_proxy,6242.633673951569,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,30.0,chi_QES_norm_200K,2.7936011005379293,,relative,Normalized to 200 K
+temperature,QES,LL,,40.0,chi_QES_proxy,5134.31568810551,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,40.0,chi_QES_norm_200K,2.2976248016362435,,relative,Normalized to 200 K
+temperature,QES,LL,,50.0,chi_QES_proxy,4415.571968601893,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,50.0,chi_QES_norm_200K,1.975984393007389,,relative,Normalized to 200 K
+temperature,QES,LL,,60.0,chi_QES_proxy,3725.150697156537,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,60.0,chi_QES_norm_200K,1.667018382108396,,relative,Normalized to 200 K
+temperature,QES,LL,,70.0,chi_QES_proxy,2209.81043737097,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,70.0,chi_QES_norm_200K,0.9888981465593584,,relative,Normalized to 200 K
+temperature,QES,LL,,80.0,chi_QES_proxy,3519.260865659337,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,80.0,chi_QES_norm_200K,1.5748819393983011,,relative,Normalized to 200 K
+temperature,QES,LL,,90.0,chi_QES_proxy,2001.8451566503377,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,90.0,chi_QES_norm_200K,0.8958329328308898,,relative,Normalized to 200 K
+temperature,QES,LL,,100.0,chi_QES_proxy,1976.1400316820495,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,100.0,chi_QES_norm_200K,0.8843297966304569,,relative,Normalized to 200 K
+temperature,QES,LL,,120.0,chi_QES_proxy,2976.594960541385,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,120.0,chi_QES_norm_200K,1.3320369882220608,,relative,Normalized to 200 K
+temperature,QES,LL,,150.0,chi_QES_proxy,2092.5125297826567,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,150.0,chi_QES_norm_200K,0.936406909552,,relative,Normalized to 200 K
+temperature,QES,LL,,180.0,chi_QES_proxy,1987.306494203201,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,180.0,chi_QES_norm_200K,0.8893268289116186,,relative,Normalized to 200 K
+temperature,QES,LL,,200.0,chi_QES_proxy,2234.618848320722,,arb.,"Stokes 5-100 cm^-1, Bose-corrected, no additional baseline subtraction"
+temperature,QES,LL,,200.0,chi_QES_norm_200K,1.0,,relative,Normalized to 200 K
+temperature_model,QES,LL,,,Curie-Weiss_theta,-18.367175592261287,9.715103753993937,K,Finite-window reference implementation; not a hard target
+temperature_model,QES,LL,,,Curie-Weiss_R2,0.929324528681698,,1,Finite-window reference implementation
+temperature_model,QES,LL,,,lowT_to_200K_ratio,3.910774299695869,,1,11.6 K / 200 K
+sample_model_selection,Fe:MoS2,helicity-switched,,12.0,AIC_one_component,2133.3920903976846,,1,Reference Gaussian + linear-baseline fit over 230-310 cm^-1; not a hard target
+sample_model_selection,Fe:MoS2,helicity-switched,,12.0,AIC_two_component,2092.7141903189954,,1,Reference Gaussian + linear-baseline fit over 230-310 cm^-1; not a hard target
+sample_model_selection,Fe:MoS2,helicity-switched,,12.0,delta_AIC_one_minus_two,40.6779000786892,,1,Positive value favors the two-component model; alternative reasonable model-selection metrics accepted
+temperature_model_comparison,QES,LL,,,constant_R2,0.0,,1,Reference 5-100 cm^-1 finite-window implementation; model ranking is more important than exact value
+temperature_model_comparison,QES,LL,,,constant_AICc,2.45922326676894,,1,Reference 5-100 cm^-1 finite-window implementation; model ranking is more important than exact value
+temperature_model_comparison,QES,LL,,,linear_T_R2,0.5965937558862286,,1,Reference 5-100 cm^-1 finite-window implementation; model ranking is more important than exact value
+temperature_model_comparison,QES,LL,,,linear_T_AICc,-7.49255742378591,,1,Reference 5-100 cm^-1 finite-window implementation; model ranking is more important than exact value
+temperature_model_comparison,QES,LL,,,linear_invT_R2,0.8524115630448719,,1,Reference 5-100 cm^-1 finite-window implementation; model ranking is more important than exact value
+temperature_model_comparison,QES,LL,,,linear_invT_AICc,-21.56978891981255,,1,Reference 5-100 cm^-1 finite-window implementation; model ranking is more important than exact value
+temperature_model_comparison,QES,LL,,,Curie-Weiss_R2,0.9293245286816979,,1,Reference 5-100 cm^-1 finite-window implementation; model ranking is more important than exact value
+temperature_model_comparison,QES,LL,,,Curie-Weiss_AICc,-28.569303959139695,,1,Reference 5-100 cm^-1 finite-window implementation; model ranking is more important than exact value
+temperature_robustness,QES,LL,,,5-100_cm^-1_theta,-18.367175592261287,9.715103753993937,K,Reference cutoff sensitivity; theta is not a hard grading target
+temperature_robustness,QES,LL,,,10-100_cm^-1_theta,-21.0344686,11.04583856,K,Reference cutoff sensitivity; theta is not a hard grading target
+temperature_robustness,QES,LL,,,5-90_cm^-1_theta,-18.03377347,9.5129019,K,Reference cutoff sensitivity; theta is not a hard grading target
+temperature_robustness,QES,LL,,,10-90_cm^-1_theta,-20.6604449,10.80022451,K,Reference cutoff sensitivity; theta is not a hard grading target

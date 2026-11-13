@@ -1,0 +1,44 @@
+{
+  "task_id": "tully2012_fig2_143K_250K_ba",
+  "temperatures_K": [143.0, 250.0],
+  "methods": ["exact_adiabatic", "exact_nonadiabatic", "rpsh_ba"],
+  "units": {
+    "internal": "atomic_units",
+    "hbar": 1.0,
+    "k_B_Eh_per_K": 3.166811563e-6,
+    "a0_over_t0_m_per_s": 2187691.26364,
+    "reported_rate_unit": "m molecule^-1 s^-1",
+    "reported_logarithm": "log10(rate / (m molecule^-1 s^-1))"
+  },
+  "model": {
+    "dimension": 1,
+    "electronic_states": 2,
+    "reactant_asymptotic_electronic_degeneracy": 2,
+    "mass_au": 2000.0,
+    "V11": "A*exp(-B*R^2)",
+    "V22": "C*exp(2*E*(R-D)) + 2*C*exp(E*(R-D))",
+    "V12": "F*exp(-G*R^2)",
+    "parameters_au": {
+      "A": 0.005,
+      "B": 2.0,
+      "C": 1e-5,
+      "D": -2.8,
+      "E": 1.2,
+      "F": 0.001,
+      "G": 2.0
+    },
+    "reactant_side": "R lower than the maximum of the lower adiabatic potential",
+    "product_side": "R greater than the maximum of the lower adiabatic potential",
+    "dividing_surface": "numerical maximum of the lower adiabatic potential"
+  },
+  "paper_conditions": {
+    "ring_polymer_beads": 32,
+    "long_time_step_fs": 0.0024,
+    "free_ring_internal_step_divisor": 10,
+    "target_figure": "Figure 2 total rate coefficients"
+  },
+  "reporting": {
+    "log10_rate_decimal_places": 3,
+    "standard_error_decimal_places": 3
+  }
+}

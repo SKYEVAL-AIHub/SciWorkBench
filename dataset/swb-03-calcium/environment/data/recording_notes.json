@@ -1,0 +1,68 @@
+{
+  "recording": {
+    "frame_count": 240,
+    "time_unit": "s",
+    "timestamps_file": "timestamps.csv",
+    "pixel_size_um": 0.8
+  },
+  "stimulus": {
+    "onset_s": 5.5,
+    "offset_s": 6.0
+  },
+  "analysis_windows_s": {
+    "baseline": [
+      0.5,
+      4.5
+    ],
+    "response": [
+      5.5,
+      18.0
+    ]
+  },
+  "spatial_alignment": {
+    "model": "rigid_translation",
+    "reference_file": "reference_frame.tif",
+    "registration_crop_xyxy": [
+      60,
+      20,
+      240,
+      120
+    ],
+    "highpass_sigma_px": 4.0,
+    "subpixel_increment_px": 0.05,
+    "maximum_accepted_absolute_shift_px": 7.0
+  },
+  "frame_quality": {
+    "baseline_for_mean_ratio_s": [
+      0.5,
+      4.5
+    ],
+    "minimum_global_mean_ratio": 0.55,
+    "maximum_saturated_pixel_fraction": 0.05,
+    "saturated_pixel_threshold": 250,
+    "repair_invalid_samples": "linear_interpolation_in_time"
+  },
+  "fluorescence_measurement": {
+    "cell_statistic": "mean",
+    "background_statistic": "mean",
+    "reference_region_statistic": "median",
+    "neuropil_annulus_inner_radius_px": 4,
+    "neuropil_annulus_outer_radius_px": 14,
+    "neuropil_statistic": "mean",
+    "exclude_all_supplied_regions_from_neuropil": true,
+    "neuropil_coefficient": 0.7,
+    "baseline_statistic": "mean",
+    "intensity_drift_reference": "background_subtracted_reference_region",
+    "intensity_drift_normalization_anchor": "median_over_baseline_window"
+  },
+  "response_metrics": {
+    "peak_window_s": [
+      5.5,
+      18.0
+    ],
+    "auc_method": "trapezoid_of_positive_deltaF_F0_using_timestamps",
+    "half_peak_latency": "first_upward_crossing_with_linear_time_interpolation",
+    "baseline_sd_ddof": 1,
+    "responder_rule": "peak_at_least_5_baseline_sd_and_AUC_at_least_1000_percent_s"
+  }
+}

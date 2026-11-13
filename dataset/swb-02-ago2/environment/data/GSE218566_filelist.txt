@@ -1,0 +1,13 @@
+#Archive/File	Name	Time	Size	Type
+Archive	GSE218566_RAW.tar	08/11/2023 00:17:20	540948480	TAR
+File	GSM6752591_on_target_cell_metadata.csv.gz	11/22/2022 14:54:51	5822620	CSV
+File	GSM6752591_on_target_nascent_tx.Barcodes.tsv.gz	11/22/2022 14:54:52	486850	TSV
+File	GSM6752591_on_target_nascent_tx.Genes.tsv.gz	11/22/2022 14:54:52	231286	TSV
+File	GSM6752591_on_target_nascent_tx_count_matrix.mtx.gz	11/22/2022 14:55:34	123112446	MTX
+File	GSM6752591_on_target_sgRNA.Barcodes.tsv.gz	11/22/2022 14:55:34	486845	TSV
+File	GSM6752591_on_target_sgRNA.Genes.tsv.gz	11/22/2022 14:55:34	1853	TSV
+File	GSM6752591_on_target_sgRNA_count_matrix.mtx.gz	11/22/2022 14:55:35	1212343	MTX
+File	GSM6752591_on_target_whole_tx.Barcodes.tsv.gz	11/22/2022 14:55:35	486848	TSV
+File	GSM6752591_on_target_whole_tx.Genes.tsv.gz	11/22/2022 14:55:35	231284	TSV
+File	GSM6752591_on_target_whole_tx_count_matrix.mtx.gz	11/22/2022 14:57:24	408865784	MTX
+File	GSM6752591_whole_txome_sgRNA_sample_name_barcode_table.csv.gz	11/22/2022 14:57:24	1387	CSV

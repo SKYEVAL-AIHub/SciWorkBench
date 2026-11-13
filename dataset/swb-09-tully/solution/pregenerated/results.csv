@@ -1,0 +1,7 @@
+temperature_K,method,beads,rate_au,rate_m_per_molecule_s,log10_rate_m_per_molecule_s,se_log10_dex,numerically_converged
+143.0,exact_adiabatic,,3.1222652728e-08,6.8305524601e-02,-1.166,0.000,true
+143.0,exact_nonadiabatic,,2.3031891871e-08,5.0386668630e-02,-1.298,0.000,true
+143.0,rpsh_ba,32,2.5819952311e-08,5.6486084098e-02,-1.248,0.089,true
+250.0,exact_adiabatic,,7.1222951407e-07,1.5581382856e+00,0.193,0.000,true
+250.0,exact_nonadiabatic,,5.9280636069e-07,1.2968772963e+00,0.113,0.000,true
+250.0,rpsh_ba,32,6.1963910984e-07,1.3555790672e+00,0.132,0.060,true

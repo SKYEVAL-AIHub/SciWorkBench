@@ -1,0 +1,3 @@
+Metric,P_gain,Q_gain,PQ_joint_gain,Synergy,Synergy_95CI_lower,Synergy_95CI_upper,Synergy_p_value,ANOVA_interaction_p
+SA,-0.0393,-0.0323,0.0121,0.0836,0.0779,0.0894,<0.0001,1.38e-179
+QED,0.0607,0.0343,0.1259,0.0309,0.0243,0.0374,<0.0001,3.63e-20

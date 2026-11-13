@@ -1,0 +1,10 @@
+# 舒张帧(帧100)静息膜电位分层统计，分FOV、高/低置信像素计数
+FOV1_high_conf:24120
+FOV1_low_conf:3120
+FOV2_high_conf:22980
+FOV2_low_conf:2960
+FOV3_high_conf:23560
+FOV3_low_conf:3010
+FOV4_high_conf:24410
+FOV4_low_conf:2870
+# 仅保留生理区间-100~-60mV，饱和失真像素已剔除

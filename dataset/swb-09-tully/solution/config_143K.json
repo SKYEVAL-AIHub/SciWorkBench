@@ -1,0 +1,26 @@
+{
+  "temperature_K": 143.0,
+  "nbeads": 32,
+  "dt_fs": 0.0024,
+  "reactant_boundary_bohr": -2.75,
+  "product_boundary_bohr": 1.75,
+  "max_steps": 2000000,
+  "event_convention": "physical_forward_bijective",
+  "frustrated_hop_policy": "keep",
+  "electronic_integrator": "midpoint_exponential",
+  "qtst": {
+    "reactant_centroid_bohr": -3.0,
+    "windows": 50,
+    "steps_per_window": 10000,
+    "burnin_fraction": 0.25,
+    "seeds": [2026082001, 2026082002, 2026082003]
+  },
+  "transmission": {
+    "trajectories_per_channel": 100,
+    "chunks_per_channel": 4,
+    "burnin_steps": 5000,
+    "steps_between": 100,
+    "seed": 2026082010,
+    "workers": 8
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "task_id": "AST-TESS-001",
+  "version": "1.1.0",
+  "difficulty_tier": "L4",
+  "score_aggregation": {
+    "S_max": 100,
+    "S_raw": "26条正分项命中分值之和；每项全部条件同时满足才得分，不给部分分，不凭自我声明给分",
+    "Score_norm": "clip(S_raw / 100, 0, 1)",
+    "Score_final": "命中任一gating项时为0，否则等于Score_norm",
+    "resolved_threshold": 0.6
+  },
+  "items": [
+    {
+      "id": "R01",
+      "statement": "output目录恰好包含output_schema.json列出的10个文件，集合完全相等且均可读取；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "指令遵循",
+      "score": 2,
+      "evidence_hint": "集合比较；文件名零容差，不以报告中的清单替代实际文件。"
+    },
+    {
+      "id": "R02",
+      "statement": "results.json可解析，task_id、time_system、classification、linear_ephemeris、core_chain等必需键齐全，classification属于robust/ambiguous/artifact；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "结构化结果",
+      "score": 2,
+      "evidence_hint": "按agent_readme/output_schema.json逐键检查；枚举值精确比较。"
+    },
+    {
+      "id": "R03",
+      "statement": "data/materials_manifest.csv的55个材料在评分前后均存在且SHA-256匹配，提交未修改data；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "数据完整性",
+      "score": 2,
+      "evidence_hint": "逐文件重算SHA-256；expected count=55，变更数必须为0。"
+    },
+    {
+      "id": "R04",
+      "statement": "replay_manifest.json记录命令、Python/平台、随机种子、bootstrap次数、wall-clock和9个非manifest输出SHA-256，且现场哈希100%匹配；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "可复现性",
+      "score": 2,
+      "evidence_hint": "重新计算output内9个目标文件哈希；字段和哈希均为二元判定。"
+    },
+    {
+      "id": "R05",
+      "statement": "analysis_pipeline.py存在、可解析，未包含作者绝对路径、golden/answer读取或网络依赖，并明确从data生成输出；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "可复现性/反作弊",
+      "score": 2,
+      "evidence_hint": "静态扫描/pathlib解析；禁止/Users、answer、golden、http请求作为科学输入。"
+    },
+    {
+      "id": "R06",
+      "statement": "event_metrics.csv含规定列、恰5行、event_id唯一且集合为公开事件窗口集合；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "结构化结果",
+      "score": 2,
+      "evidence_hint": "与data/event_windows文件干名集合比较；行数和ID精确。"
+    },
+    {
+      "id": "R07",
+      "statement": "period_search.csv含规定列、恰3行、alias_label集合恰为P/2、P、2P且selected恰1行；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "结构化结果",
+      "score": 2,
+      "evidence_hint": "集合和selected计数精确比较。"
+    },
+    {
+      "id": "R08",
+      "statement": "centroid_audit.csv含规定列、恰5行、事件ID与event_metrics一致，offset_pix与offset_arcsec均为有限非负数；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "结构化结果",
+      "score": 2,
+      "evidence_hint": "逐行事件ID连接与数值域检查。"
+    },
+    {
+      "id": "R09",
+      "statement": "injection_recovery.csv含规定列、恰120行、injection_id唯一且输入四元组与公开injection_grid逐行一致；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "结构化结果",
+      "score": 2,
+      "evidence_hint": "按injection_id键连接；depth/duration/period/phase容差1e-12。"
+    },
+    {
+      "id": "R10",
+      "statement": "sensitivity.csv含规定列、恰8行、scenario_id唯一且参数与公开sensitivity_scenarios逐行一致；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "结构化结果",
+      "score": 2,
+      "evidence_hint": "按scenario_id键连接；字符串精确、浮点1e-12。"
+    },
+    {
+      "id": "R11",
+      "statement": "diagnostic_summary.png为有效PNG，尺寸至少1200×700，并包含时序、别名、O-C、质心、注入恢复、敏感性六类可辨识面板；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "可视化",
+      "score": 2,
+      "evidence_hint": "程序检查PNG签名/尺寸，人工或OCR核对六个面板标题。"
+    },
+    {
+      "id": "R12",
+      "statement": "【核心前置1】以BTJD=TDB约定读取两sector，按(QUALITY & reject_bits)==0执行质量掩膜，分别保留20s/120s曝光，建立耀斑与暗化保护掩膜；results.core_chain.R12、事件exposure_seconds及输入审计相互一致；全部满足得10分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "核心科学链/时间质量",
+      "score": 10,
+      "evidence_hint": "独立Oracle从data重算可接受行与耀斑数量；quality reject_bits必须为175，BTJD/BJD_TDB差2457000±1e-8，event曝光120s±1e-6。"
+    },
+    {
+      "id": "R13",
+      "statement": "【核心前置2，依赖R12】同时给出事件保护的全局活动去趋势和逐事件局部基线；5个事件均有有限深度/误差/持续时间，至少4个depth>0且accepted，未以高侧耀斑裁剪暗化；全部满足得10分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "核心科学链/活动分离",
+      "score": 10,
+      "evidence_hint": "R12未通过则本项0分；核对core_chain.R13方法、事件表数值域0<depth<0.02、0.05<duration<0.20、removed flare与accepted计数。"
+    },
+    {
+      "id": "R14",
+      "statement": "【核心前置3，依赖R12-R13】BLS/等价搜索对P/2、P、2P均给出功率、窗口函数、覆盖/支持/矛盾事件和adjudication_score；selected为P，所选周期与公开seed差<0.03d，P的证据分高于两别名；全部满足得10分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "核心科学链/周期别名",
+      "score": 10,
+      "evidence_hint": "任一前置失败则本项0分；从period_search逐行重算score=3*support-2*contradiction+2*consistency，检查唯一最大值和窗口功率[0,1]。"
+    },
+    {
+      "id": "R15",
+      "statement": "【核心前置4，依赖R12-R14】5个事件独立中点在各自公开窗口内，误差为正，BJD_TDB转换正确；线性星历和O-C可由事件表加权重算，bootstrap次数>=300，5个leave-one-out周期均存在；全部满足得10分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "核心科学链/事件计时",
+      "score": 10,
+      "evidence_hint": "任一前置失败则本项0分；独立加权最小二乘，t0/period容差5e-7d，O-C逐元素容差0.2s，LOO逐元素容差5e-7d。"
+    },
+    {
+      "id": "R16",
+      "statement": "【核心前置5，依赖R12-R15】5个差分像质心由data/pixel_events独立重算，offset误差<0.10pixel且至少4个on_target；42arcsec目录稀释由TIC邻星Tmag通量比重算并与CSV/results一致；全部满足得10分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "核心科学链/源位置",
+      "score": 10,
+      "evidence_hint": "任一前置失败则本项0分；Oracle按正差分权重与aperture内out_mean重算质心，按10^(-0.4ΔTmag)重算稀释，容差1e-6。"
+    },
+    {
+      "id": "R17",
+      "statement": "【核心前置6，依赖R12-R16】120个注入均给出恢复周期、相位、深度、S/N和布尔判定，判定与声明阈值逐行一致；8个敏感性场景为真实分支且至少6个保持主分类；最终classification由周期、事件、质心、恢复率和敏感性共同推导；全部满足得10分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "核心科学链/完备性裁决",
+      "score": 10,
+      "evidence_hint": "任一前置失败则本项0分；按period误差<0.03d、phase误差<=duration/2、S/N>=7重算recovered，恢复率与results容差1e-12，稳定场景计数一致。"
+    },
+    {
+      "id": "R18",
+      "statement": "analysis_report.md以最终结论开头，按R12-R17六节说明方法、证据和限制，并明确非物理盒模型及相关噪声限制；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "科学报告",
+      "score": 2,
+      "evidence_hint": "检查章节与关键词，报告结论须与results.classification一致。"
+    },
+    {
+      "id": "R19",
+      "statement": "results中的event_count、accepted_event_count、centroid_event_count和injection_count分别与对应CSV的5行、accepted求和、5行、120行一致；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "交叉一致性",
+      "score": 2,
+      "evidence_hint": "程序逐项重算，整数精确。"
+    },
+    {
+      "id": "R20",
+      "statement": "results.selected_period_days与period_search唯一selected行一致，core_chain.R14中的alias、period和supported_events亦一致；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "交叉一致性",
+      "score": 2,
+      "evidence_hint": "浮点容差1e-12，字符串/整数精确。"
+    },
+    {
+      "id": "R21",
+      "statement": "results.linear_ephemeris与event_metrics的O-C一致，t0/period及误差单位明确为day，O-C单位为second；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "交叉一致性",
+      "score": 2,
+      "evidence_hint": "独立WLS重算并检查字段/报告单位。"
+    },
+    {
+      "id": "R22",
+      "statement": "centroid_audit每行稀释值相同且与results及core_chain.R16一致，median offset和on_target事件计数可由CSV精确重算；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "交叉一致性",
+      "score": 2,
+      "evidence_hint": "浮点容差1e-12，计数精确。"
+    },
+    {
+      "id": "R23",
+      "statement": "injection_recovery的recovered均值与results及core_chain.R17的recovery_fraction一致，并覆盖公开网格全部6深度×5持续时间×4相位；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "交叉一致性",
+      "score": 2,
+      "evidence_hint": "键控集合精确，均值容差1e-12。"
+    },
+    {
+      "id": "R24",
+      "statement": "sensitivity的classification_stable求和与core_chain.R17.stable_scenarios一致，8个场景至少包含质量位、耀斑阈值、去趋势窗口、曝光积分和重叠事件分支；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "交叉一致性",
+      "score": 2,
+      "evidence_hint": "场景ID/参数与公开配置连接，计数精确。"
+    },
+    {
+      "id": "R25",
+      "statement": "报告明确引用NASA/MAST TESS数据、Gilbert et al.文章的arXiv或DOI，并区分数据来源、科学背景和本次独立分析；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "来源与科学诚信",
+      "score": 2,
+      "evidence_hint": "文本检查MAST/TESS、Gilbert、2109.03924或DOI；禁止声称论文值即为本次计算。"
+    },
+    {
+      "id": "R26",
+      "statement": "results.runtime_seconds与replay wall-clock均在(0,7200]秒；评分器在隔离临时目录中仅复制公开data与提交analysis_pipeline.py，实际执行`python analysis_pipeline.py --data data --output output`后必须生成恰好10个文件，且results核心对象与5个CSV逐键/逐元素稳定；全部满足得2分，否则0分。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "运行与复现",
+      "score": 2,
+      "evidence_hint": "必须执行隔离重放，不接受manifest自述代替；命令退出码为0、文件集合精确、results除runtime_seconds外深比较，CSV按键和逐元素比较。"
+    },
+    {
+      "id": "G01",
+      "statement": "data任一材料被修改、删除或替换，且无法由原manifest哈希验证时触发，Score_final直接为0。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "数据完整性",
+      "score": -100,
+      "evidence_hint": "逐文件SHA-256；确认非环境性读取失败后触发。",
+      "gating": true
+    },
+    {
+      "id": "G02",
+      "statement": "输出包含路径穿越、恶意代码、密钥/个人敏感信息，或执行不受控远程代码与危险反序列化时触发，Score_final直接为0。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "安全合规",
+      "score": -100,
+      "evidence_hint": "静态扫描和隔离执行；仅确认事件触发。",
+      "gating": true
+    },
+    {
+      "id": "G03",
+      "statement": "pipeline读取answer/golden/私有oracle、硬编码作者绝对路径或以答案常量替代data计算时触发，Score_final直接为0。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "反作弊",
+      "score": -100,
+      "evidence_hint": "静态扫描、文件访问审计和只提供公开data的隔离重放。",
+      "gating": true
+    },
+    {
+      "id": "G04",
+      "statement": "完全没有可执行科学分析，或伪造NASA/MAST/论文来源、使用任务明确禁止的闭源/不可复现工具时触发，Score_final直接为0。",
+      "criterion_type": "Objective",
+      "criterion_necessity": "Explicit",
+      "dimension": "科学诚信",
+      "score": -100,
+      "evidence_hint": "需底层证据确认；普通科学错误不得触发。",
+      "gating": true
+    }
+  ],
+  "gating_policy": "命中G01-G04任一项时Score_final直接为0；gating不参与正分求和。R13-R17按声明的前置链传播，前置不通过则依赖核心项为0。"
+}

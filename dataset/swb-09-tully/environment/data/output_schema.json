@@ -1,0 +1,45 @@
+{
+  "results.csv": {
+    "rows": 6,
+    "primary_key": ["temperature_K", "method"],
+    "required_columns": [
+      "temperature_K",
+      "method",
+      "beads",
+      "rate_au",
+      "rate_m_per_molecule_s",
+      "log10_rate_m_per_molecule_s",
+      "se_log10_dex",
+      "numerically_converged"
+    ],
+    "temperature_enum_K": [143.0, 250.0],
+    "method_enum": ["exact_adiabatic", "exact_nonadiabatic", "rpsh_ba"],
+    "beads_rule": "32 for rpsh_ba and empty for exact methods"
+  },
+  "diagnostics.json": {
+    "required_top_level_keys": [
+      "model_checks",
+      "exact_quantum_checks",
+      "rpsh_ba_checks",
+      "global_checks"
+    ],
+    "required_exact_fields": [
+      "per_temperature",
+      "spatial_boundary_check",
+      "energy_quadrature_check",
+      "open_channel_flux_check",
+      "thermal_tail_check"
+    ],
+    "required_rpsh_fields": [
+      "per_temperature",
+      "sampling_size",
+      "independent_blocks",
+      "standard_error_estimator",
+      "reactive_trajectory_count",
+      "crossing_count_summary",
+      "hop_count_summary",
+      "electronic_norm_error",
+      "energy_error"
+    ]
+  }
+}

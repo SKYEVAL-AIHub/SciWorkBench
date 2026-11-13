@@ -1,0 +1,4 @@
+storage	layer_name	value_type	origin	derivation
+X	whole	nonnegative integer UMI count	GSM6752591_on_target_whole_tx_count_matrix.mtx.gz	sum of selected cell-level public counts by guide
+layers	nascent	nonnegative integer UMI count	GSM6752591_on_target_nascent_tx_count_matrix.mtx.gz	sum of selected cell-level public counts by guide
+layers	preexisting	nonnegative integer UMI count	derived from public whole and nascent layers	whole minus nascent after guide aggregation; included only after elementwise nonnegativity validation

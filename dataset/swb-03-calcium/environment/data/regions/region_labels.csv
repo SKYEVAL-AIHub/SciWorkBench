@@ -1,0 +1,9 @@
+roi_file,label,role
+region_01.roi,cell1,cell
+region_02.roi,cell2,cell
+region_03.roi,cell3,cell
+region_04.roi,cell4,cell
+region_05.roi,cell5,cell
+region_06.roi,cell6,cell
+region_07.roi,background,background
+region_08.roi,reference_region,intensity_reference
